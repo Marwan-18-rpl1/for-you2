@@ -1,126 +1,106 @@
+/* Reset dan gaya dasar */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.container {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
   color: #333;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
-#nama {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ff6161;
+header h1 {
+  font-size: 2.5em;
 }
 
-.pesan {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  color: #fff;
+header p {
+  font-style: italic;
 }
 
-#showPhotoButton {
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 20px 0;
+  color: #555;
+}
+
+/* Facts Section */
+.facts {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facts li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Interactive Section */
+.interactive {
+  text-align: center;
+  padding: 20px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
   padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #ff6161;
+  background: #333;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 1em;
 }
 
-#showPhotoButton:hover {
-  background-color: #ff3d3d;
+button:hover {
+  background: #555;
 }
 
-#photoContainer {
+#messageDisplay {
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  font-style: italic;
+  color: #555;
 }
 
-.photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 15px;
-  overflow: hidden;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 2px solid #ff6161;
-  border-radius: 15px;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: scale(0.8);
-  }
-  to {
-      opacity: 1;
-      transform: scale(1);
-  }
-}
-
-
-#photoContainer {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-}
-
-.photo {
-  width: 200px; /* Ukuran gambar lebih besar */
-  height: 200px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: absolute; /* Membuat posisi melayang */
-  animation: flyUp 3s ease-out forwards; /* Animasi melayang lebih lama */
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 2px solid #ff6161;
-  border-radius: 15px;
-}
-
-/* Animasi melayang */
-@keyframes flyUp {
-  0% {
-      opacity: 0;
-      transform: translateY(400px) scale(0.5);
-  }
-  50% {
-      opacity: 1;
-      transform: translateY(-50px) scale(1.2);
-  }
-  100% {
-      transform: translateY(-200px) scale(1);
-  }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
 }
