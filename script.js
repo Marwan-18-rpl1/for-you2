@@ -1,9 +1,9 @@
 // Data foto dan nama
 const photoData = [
     { name: "Aul", src: "bocah1.jpg" },
-    { name: "Marwan", src: "bocah2.jpg" },
+    { name: "Marwan", src: "marwin.jpg" },
     { name: "Tante", src: "bocah3.jpg" },
-    { name: "Pia", src: "marwan.jpg" }
+    { name: "Pia", src: "bocah2.jpg" }
   ];
   
   // Elemen HTML
