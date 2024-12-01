@@ -1,7 +1,7 @@
 // Data foto dan nama
 const photoData = [
     { name: "Aul", src: "bocah1.jpg" },
-    { name: "Pia", src: "marwin.jpg" },
+    { name: "Om'", src: "marwin.jpg" },
     { name: "Tante", src: "bocah3.jpg" },
     { name: "Marwin", src: "bocah2.jpg" }
   ];
