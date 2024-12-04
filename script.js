@@ -1,17 +1,31 @@
-const nextButton = document.getElementById('next-button');
-const prevButton = document.getElementById('prev-button');
-const pages = document.querySelectorAll('.page');
+function playAnimation() {
+    // Mengaktifkan animasi cahaya
+    const lightContainer = document.querySelector('.lights');
+    lightContainer.style.display = 'block';
+    
+    // Membuat cahaya berkedip
+    for (let i = 0; i < 30; i++) {
+        const light = document.createElement('div');
+        light.classList.add('light');
+        light.style.top = `${Math.random() * 100}vh`;
+        light.style.left = `${Math.random() * 100}vw`;
+        light.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        lightContainer.appendChild(light);
+    }
 
-let currentPage = 0;
+    // Mengaktifkan animasi hati
+    const heartContainer = document.querySelector('.hearts');
+    heartContainer.style.display = 'block';
 
-nextButton.addEventListener('click', () => {
-  pages[currentPage].classList.add('hidden');
-  currentPage = (currentPage + 1) % pages.length;
-  pages[currentPage].classList.remove('hidden');
-});
+    // Membuat hati bergerak
+    for (let i = 0; i < 10; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.animationDuration = `${Math.random() * 2 + 3}s`;
+        heartContainer.appendChild(heart);
 
-prevButton.addEventListener('click', () => {
-  pages[currentPage].classList.add('hidden');
-  currentPage = (currentPage - 1 + pages.length) % pages.length;
-  pages[currentPage].classList.remove('hidden');
-});
+        // Hapus hati setelah animasi selesai
+        setTimeout(() => heart.remove(), 5000);
+    }
+}
